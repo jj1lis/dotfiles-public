@@ -18,7 +18,7 @@ confirm () {
 DATE="$(data +%Y%m%d%G%I%M%S)"
 
 # Checking directory
-REPO_URL="git@github.com:jj1lis/dotfiles.git"
+REPO_URL="git@github.com:jj1lis/dotfiles-public.git"
 
 if [[ ! $(pwd) =~ ^.*/dotfiles$ ]]; then
     echo "Current directory is ${current_dir}."
@@ -27,7 +27,7 @@ if [[ ! $(pwd) =~ ^.*/dotfiles$ ]]; then
 fi
 current_repo="$(git config --get remote.origin.url)"
 if [[ ${current_repo} != ${REPO_URL} ]]; then
-    echo "Git file of 'git@github.com:jj1lis/dotfiles.git' not found."
+    echo "Git file of 'git@github.com:jj1lis/dotfiles-public.git' not found."
     echo -n "Is this directory realy same as the repository? [y/n] :"
     if [[ $(confirm) -eq 0 ]]; then
         echo "Process will be continued but don't check the branch."
