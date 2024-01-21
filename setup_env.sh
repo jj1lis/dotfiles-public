@@ -15,7 +15,7 @@ confirm () {
     done
 }
 
-DATE="$(data +%Y%m%d%G%I%M%S)"
+DATE="$(date +%Y%m%d%G%I%M%S)"
 
 # Checking directory
 REPO_URL="git@github.com:jj1lis/dotfiles-public.git"
