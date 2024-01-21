@@ -1,0 +1,12 @@
+導入時にやることリスト
+
+- .config/nvim/ を置く
+- Nerd Fonts を入れる
+    -   git clone --branch=master --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+        の後に
+        cd nerd-fonts && ./install $1
+        でいける
+- nvim の実行ファイルを用意
+
+- Live Grep (LSP) のために ripgrep が必要なので用意
+- mason-lspconfig にすでに書いてあるLSPのいくつかはnpmを要求してくる
