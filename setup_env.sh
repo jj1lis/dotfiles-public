@@ -20,9 +20,9 @@ DATE="$(data +%Y%m%d%G%I%M%S)"
 # Checking directory
 REPO_URL="git@github.com:jj1lis/dotfiles-public.git"
 
-if [[ ! $(pwd) =~ ^.*/dotfiles$ ]]; then
-    echo "Current directory is ${current_dir}."
-    echo "Excecute at 'dotfiles/'."
+if [[ ! $(pwd) =~ ^.*/dotfiles-public$ ]]; then
+    echo "Current directory is $(pwd)."
+    echo "Excecute at 'dotfiles-public/'."
     exit 1
 fi
 current_repo="$(git config --get remote.origin.url)"
